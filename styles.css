@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(180deg, #8ec5e8, #d8e8f5);
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+.window {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 420px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    color: #222;
+    display: none;
+}
+
+.titlebar {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #ececec;
+    padding: 10px 12px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #d5d5d5;
+    cursor: move;
+    user-select: none;
+}
+
+#menubar {
+    display: flex;
+    justify-content: space-between;
+    background: #f6f6f6;
+    padding: 4px 12px;
+    font-size: 13px;
+    color: #222;
+}
+
+.icon{
+    position: absolute;
+    top: 60px; left:20px;
+    width: 74px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer;
+    user-select: none;
+}
+
+#settings-icon { top: 240px; }
+#settings { display: none; top: 200px; left: 60% }
+
+.wall {
+    padding: 6px 12px;
+    margin-right: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #f6f6f6;
+    cursor: pointer;
+}
+
+#welcome-icon { top: 150px; }
+
+.icon-img { font-size: 36px; }
+
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.red { background: #ff5f57; cursor:pointer; }
+.yellow { background: #febc2e; }
+.green { background: #28c840; }
+
+.title { margin-left: 8px; font-size: 13px; color: #555; }
+
+.content { padding: 20px; }
